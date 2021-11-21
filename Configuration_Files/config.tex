@@ -10,7 +10,7 @@
 % Set-up caption colors
 \captionsetup[figure]{labelfont={color=bluepoli}} % Set colour of the captions
 \captionsetup[table]{labelfont={color=bluepoli}} % Set colour of the captions
-\captionsetup[algorithm]{labelfont={color=bluepoli}} % Set colour of the captions
+%\captionsetup[algorithm]{labelfont={color=bluepoli}} % Set colour of the captions
 
 \theoremstyle{colored}
 \newtheorem{theorem}{Theorem}[chapter]
@@ -21,14 +21,14 @@
 \newcommand\B{\rule[-1.2ex]{0pt}{0pt}}
 
 % Pseudo-code algorithm descriptions.
-\newcounter{algsubstate}
-\renewcommand{\thealgsubstate}{\alph{algsubstate}}
-\newenvironment{algsubstates}
-  {\setcounter{algsubstate}{0}%
-   \renewcommand{\STATE}{%
-     \stepcounter{algsubstate}%
-     \Statex {\small\thealgsubstate:}\space}}
-  {}
+%\newcounter{algsubstate}
+%\renewcommand{\thealgsubstate}{\alph{algsubstate}}
+%\newenvironment{algsubstates}
+ % {\setcounter{algsubstate}{0}%
+  % \renewcommand{\STATE}{%
+   %  \stepcounter{algsubstate}%
+    % \Statex {\small\thealgsubstate:}\space}}
+  %{}
 
 % New font size
 \newcommand\numfontsize{\@setfontsize\Huge{200}{60}}
@@ -68,4 +68,4 @@
 \makeatother
 
 %For correctly numbering algorithms
-\numberwithin{algorithm}{chapter}
+%\numberwithin{algorithm}{chapter}

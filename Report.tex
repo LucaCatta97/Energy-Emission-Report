@@ -95,7 +95,9 @@
 %----------------------------------------------------------------------------
 %	ADD YOUR PACKAGES (be careful of package interaction)
 %----------------------------------------------------------------------------
-
+%\usepackage{pgfplots}
+\usepackage{lscape}
+\usepackage{rotating}
 %----------------------------------------------------------------------------
 %	ADD YOUR DEFINITIONS AND COMMANDS (be careful of existing commands)
 %----------------------------------------------------------------------------
@@ -103,6 +105,9 @@
 %----------------------------------------------------------------------------
 %	BEGIN OF YOUR DOCUMENT
 %----------------------------------------------------------------------------
+
+
+
 
 \begin{document}
 
@@ -166,7 +171,7 @@
 %
 % Especially for long thesis, we recommend you the second option.
 
-\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+%\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
 \mainmatter % Begin numeric (1,2,3...) page numbering
 
 % --------------------------------------------------------------------------
@@ -183,9 +188,9 @@
 %-------------------------------------------------------------------------
 
 \addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
-\bibliographystyle{abbrv}
+\bibliographystyle{ieeetr}
 \bibliography{Thesis_bibliography} % The references information are stored in the file named "Thesis_bibliography.bib"
-
+\nocite{*}
 
 \cleardoublepage
 \addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
@@ -199,13 +204,14 @@
 % LIST OF SYMBOLS
 % Write out the List of Symbols in this page
 \chapter*{List of Symbols} % You have to include a chapter for your list of symbols (
-\begin{table}[H]
-    \centering
-    \begin{tabular}{lll}
-        \textbf{Variable} & \textbf{Description} & \textbf{SI unit} \\\hline\\[-9px]
-        $\bm{u}$ & solid displacement & m \\[2px]
-        $\bm{u}_f$ & fluid displacement & m \\[2px]
-    \end{tabular}
-\end{table}
+
+%\begin{table}[H]
+%    \centering
+ %   \begin{tabular}{lll}
+  %      \textbf{Variable} & \textbf{Description} & \textbf{SI unit} \\\hline\\[-9px]
+   %     $\bm{u}$ & solid displacement & m \\[2px]
+    %    $\bm{u}_f$ & fluid displacement & m \\[2px]
+    %\end{tabular}
+%\end{table}
 
 \end{document}
