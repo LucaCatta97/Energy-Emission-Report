@@ -1,67 +1,71 @@
 \newpage
 \chapter{Case Study Description}
+To this day, hydrogen trucks are starting to become a reality. 
+What is proposed on the market or still under development offer values of chassis occupation comparable with the ones of diesel-powered solutions.
+Also, the range of such solutions is in line with what is offered today in the fossil-fueled market: $H_2$ tanks ranging from $30$ to $100$ kg can offer a range of more than $400$ km\textsuperscript{\cite{pianoidrogeno}}.
 
-To this day, Hydrogen trucks are starting to become a reality. 
-What is proposed on the market or still under development offer values of  chassis occupation comparable with the ones of diesel-powered solutions.
+A lot of effort in the development of hydrogen powered trucks is being currently spent by joint-ventures between industries and logistic partners, like the partnership between Scania and Asko; given this fact, our case study will deal with the analysis of the truck fleet needed by a sample logistic depot.
 
-Also the range of such solutions is in line with that is offered today in the fossil-fueled market: H2 tanks ranging from 30 to 100 kg can offer a range of more than 400 km \textsuperscript{\cite{pianoidrogeno}}.
+The model of truck considered is based on the Scania G-series platform, produced by the aforementioned joint venture between the two Swedish companies; the vehicle has the characteristics showed in Table \ref{tab:truckdata}. We computed the size of an hypotetical hydrogen truck with equivalent kilometric range with respect to the one powered with diesel engine.
 
-A lot of effort in the development of Hydrogen powered trucks is being currently spent by joint-ventures between industies and logistic partners, like the partnership between \textbf{Scania} and \textbf{Asko}; given this fact, our case study will deal withthe analysis of the truck fleet needed by a sample logistic depot.
+\input{Chapters/tables_codes/case_study_tables/truck_data}
+Our case studies will focus on an Amazon Logistics depot in Milano (Via V. Toffetti, 108). Being a pretty small depot, we imagined it to be served by $10$ trucks each day, with the required amount of hydrogen showed in Table \ref{tab:hydrogenrequirements} (note that the $H_2$ provision has been considered bigger of $10\%$).
 
-Our choice was the \textit{Amazon logistics depot in Milano}  (Via V. Toffetti 108). 
-Being a pretty small depot, we imagined it to be served daily by \textbf{10} trucks.
+\input{Chapters/tables_codes/case_study_tables/Hydrogen_requirements}
 
+The provision of hydrogen to serve the daily needs of the depot has been considered analysing different solutions. The focus is put on an \textbf{electrolysis system}, with the energy produced from \textbf{hydroelectric} and \textbf{photovoltaic} plants. In Figure \ref{fig:electrolyser} we can see the chosen electrolyser, whose characteristics can be seen in Table \ref{tab:specshydrolyser}.
 
-The provision of Hydrogen to serve the daily needs of the depot has been performed analyzing the different solutions.
-The focus is put on electrolysis with the energy produced by hydroelectric and photovoltaic plants.
-
-In table \ref{tab:truckdata} we the have the data of Scania G-series truck. In image \ref{fig:electrolyser} we can see the chosen electrolyser \textsuperscript{\cite{2021HGas10MWSystem}}.
-\input{Chapters/tables_codes/truck_data}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.6\textwidth]{Chapters/Pictures/Megastack-0X-5f524dc0.png}
-    \caption{HgasXMW electrolyser}
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.5\textwidth]{Chapters/Pictures/HGas 3SP.JPG}
+    \caption{Hgas3SP electrolyser by \textbf{ITM power}\textsuperscript{\cite{HGas3SP}}}
     \label{fig:electrolyser}
 \end{figure}
-\input{Chapters/tables_codes/tech_spec_hydroliser}
 
-%\section{Logistic Depot}
-\section{Hydroelectric power}
-\subsection{Transport of Electricity, Electrolyser in the depot}
+\input{Chapters/tables_codes/case_study_tables/tech_spec_hydroliser}
+
+\newpage
+\section{Hydroelectric Power}
+\subsection{Electrolyser in the Depot}
 
 This first solution is based on these assumptions:
 
 \begin{description}
-    \item[\textbf{Electricity Production}]  Electricity is produced by the Hydroelectric PP in \textit{Crodo (VB)}. See table \ref{tab:crodotechspec} for techical data. Then the electricity is transfereed using the grid.
-    \item[\textbf{Electrolysis}]  Electrolysis is performed on site in the depot, with a system owned by the logistics company.
+    \item[\textbf{Electricity Production}] It is produced by the Hydroelectric PP in \textbf{Crodo} (VB) (see Table \ref{tab:crodotechspec}) and then is transferred to Milan via the electric grid;
+    \item[\textbf{Electrolysis}] It is performed on site in the depot, with a system\textbf{ owned by the logistics company}.
 \end{description}
 
 \input{Chapters/tables_codes/case_study_tables/crodo_tech_spec}
 
+\subsection{External Electrolyser, Transport of Hydrogen}
+The second solution is based on these assumptions:
 
-%\input{Chapters/tables_codes/Crodo_10trucks}
+\begin{description}
+    \item[\textbf{Electricity Production}] It is produced by the Hydroelectric PP in \textbf{Trezzo sull'Adda} (MI) (see Table \ref{tab:trezzoaddaspec});
+    \item[\textbf{Electrolysis}] It is performed on site \textbf{in the Hydroelectric PP}; the system is \textbf{not owned by the logistics company}.
+\end{description}
 
-\subsection{Far Electrolysis}
-This second solution consist in the production of Hydrogen on the site of the Hydroelectri power plant of Trezzo sull'adda (see table \ref{tab:trezzoaddaspec}). Then the hydrogen is transfered by truck to the depot (cost $3,00$ €/kg\textsuperscript{\cite{pianoidrogeno}}) 
-%\input{Chapters/tables_codes/second_sol}
 \input{Chapters/tables_codes/case_study_tables/trezzoaddaspec}
 
+\newpage
+The hydrogen is directly bought from the owner of the electrolyser, and is then delivered to the depot in Milano using diesel powered \textbf{Euro VI trucks}. The main characteristics of this power plant are reported in the table below. This hydroelectric power plant is different from the one considered in the first solution: in fact, it uses the flow of river \textbf{Adda} instead of the potential energy. The choice of this power plant was driven by its short distance from Milan, that could make transport of $H_2$ faster and more efficient.
 
+\section{Photovoltaic Power}
 
-\section{PV}
-Other two main solutions are the use of photovoltaic power plant to produce the energy required for the hydrogen. We continue to use the same eclectrolyser used befor (Figure \ref{fig:electrolyser}).
+\subsection{PV Plant in Puglia, Transport of Hydrogen}
+In this case, we decided to place the hydrogen production in the  already present solar park near \textbf{Troia (FG)} in \textbf{Puglia}. This solution allowed us to collect a greater amount of solar energy, thanks to a warmer and sunnier climate and a more favourable angle of incidence (the nearer to the equator, the better). The hydrogen is produced on site, so the problem would be to move it to the depot in \textbf{Milan}, with a consequent increase in \textbf{transportation costs} and \textbf{$CO_2$ emissions}. In Table \ref{tab:costconstant} are showed some important cost values, while in Table \ref{tab:pvbessass} are shown the assumptions made about the efficiency of the system.
 
-The distinction is on the place of the production (one in Puglia di other in Milan). In table \ref{tab:pvbessass} can be seen the assumption about the efficiency.
-
+\input{Chapters/tables_codes/case_study_tables/costconstant}
 \input{Chapters/tables_codes/case_study_tables/pvbessassumption}
 
-\subsection{Photovoltaic Plant Puglia}
-In this case we will use part of the projected Photovoltaic Plant in\href{https://goo.gl/maps/HDedbnQQh3Apqn599}{Troia(Puglia)} with the production on site of the hydrogen. Then it will be transfered to the depot by truck.
-
-We will also analyse, in the next chapters, the economical sustainability of storage the energy and look if the storage of Hydrogen is more sustainable. In \ref{tab:hpuglia} we can see the irradiation coefficient \textsuperscript{\cite{PVINFOSYSTEM}}.
+\newpage
+In Table \ref{tab:hpuglia} is possible to see the irradiation coefficients of the chosen plant.
 
 \input{Chapters/tables_codes/case_study_tables/hpuglia}
+
+\subsection{PV Plant in Milan, Electrolyser in the Depot}
+In this other case study the PV plant is built on the roof of the depot in Milan: the situation will be reversed with respect to the previous one, having in northern Italy a lower irradiation coefficient (see Table \ref{tab:hmilan}). This will penalize the solution from the point of view of the collected solar energy, but at the same time it will have lower transportation costs, because the PV plant, the electrolyser and the depot are all in the same site.
+
 \input{Chapters/tables_codes/case_study_tables/hmilan}
-\subsection{Photovoltaic Plant Milan}
-In this other case the power plant is build up on the roof of the depot. In table \ref{tab:hmilan} we can see the irradiation coefficient for this case.
+
+In both cases we will face out with the problem of storing energy as electricity (with a BESS) or as hydrogen, producing more hydrogen of the necessary, to eventually sell it.

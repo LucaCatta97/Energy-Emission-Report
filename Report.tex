@@ -32,7 +32,7 @@
 
 % PACKAGES FOR LANGUAGE AND FONT
 \usepackage[english]{babel} % The document is in English  
-\usepackage[utf8]{inputenc} % UTF8 encoding
+\usepackage[utf8x]{inputenc} % UTF8 encoding
 \usepackage[T1]{fontenc} % Font encoding
 \usepackage[11pt]{moresize} % Big fonts
 
@@ -87,6 +87,7 @@
 \usepackage{lipsum} % DUMMY PACKAGE
 \usepackage{fancyhdr} % For the headers
 \fancyhf{}
+\usepackage{eurosym}
 
 % Input of configuration file. Do not change config.tex file unless you really know what you are doing. 
 \input{Configuration_Files/config}
@@ -106,10 +107,13 @@
 %\usepackage{pgfplots}
 \usepackage{lscape}
 \usepackage{rotating}
+\usepackage{lipsum}
+
+
 %----------------------------------------------------------------------------
 %	ADD YOUR DEFINITIONS AND COMMANDS (be careful of existing commands)
 %----------------------------------------------------------------------------
-
+\newsavebox{\mybox}
 %----------------------------------------------------------------------------
 %	BEGIN OF YOUR DOCUMENT
 %----------------------------------------------------------------------------
@@ -118,6 +122,7 @@
 
 
 \begin{document}
+
 
 \fancypagestyle{plain}{%
 \fancyhf{} % Clear all header and footer fields
