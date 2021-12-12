@@ -1,34 +1,43 @@
 \newpage
 \chapter{Economic Evaluation}
-In this chapter we will provide an economic evaluation of the proposed solutions, focusing on the specific cost in $\frac{euro}{kg_{H_2}}$ and in $\frac{euro}{MJ_{H_2}}$. The cost of the truck has been assumed as an invariant, while the cost of the compressor is included in the cost of compression.
+In this chapter we will provide an economic evaluation of the proposed solutions, focusing on the specific cost in €/kg$_{H_2}$ and in €/MJ$_{H_2}$. The purchase cost of the HD trucks has been considered for each case study: hydrogen trucks, provided by Nikola, cost $268.782$ €, while Scania diesel trucks (Euro VI) costs around $153.000$ €. The cost of the compressor is included in the cost of compression.
 
 \section{Hydroelectric PP}
 \subsection{Crodo}
+The first assumption of this analysis regards the costs to be sustained to provide the electricity to the electrolyser in the depot. As already said, there is the need to consider both a specific cost for kWh and a transmission cost. Those costs are summarised in Table \ref{tab:crodoeco}\textsuperscript{\cite{guanda20211}}.
+
+\input{Chapters/tables_codes/Crodo_tables/Crodo_spec_costs}
+
+One of the most impacting factors of this solution is the\textbf{ electrolyser }Since it needs to be bought by the logistics company, its cost has a non negligible impact on the final cost of $H_2$. The considerations done on this aspect are summarised in Table \ref{tab:crodoelectro}\textsuperscript{\cite{pianoidrogeno}}.
+
+\input{Chapters/tables_codes/Crodo_tables/Crodo_electro}
+
+Another step to be considered is the compression of $H_2$ after its production by the electrolyser. This has been assumed in $0.03$ €/kWh\textsuperscript{\cite{guanda20211}}. The last aspect to be considered is storage; the tank has a cost of $945$ € and the specific cost of storage has been considered to be \textbf{2.61 €/kg}. After all of the considered steps, the final costs are computed on a daily basis and summed together. The results are resumed in Table \ref{tab:crododaily}.
+
+\input{Chapters/tables_codes/Crodo_tables/Crodo_daily}
+
+The last step is to arrive to specific costs, considering the daily request of $H_2$. In Table \ref{tab:crodounitary} is possible to see how the cost of $H_2$ per MJ is higher than diesel ($0,03$ €/MJ considering a price of $1,55$ €/l), making this solution not convenient in the present times. The main variable that can make this solution more convenient is the specific cost of the electrolyser, which is one of the most impacting factors in this economic evaluation.
+
+\input{Chapters/tables_codes/Crodo_tables/Crodo_unitary}
+
 \subsection{Trezzo sull'Adda}
+This solution avoids the most critical cost considered in the previous one, the electrolyser. In fact, it is considered as an asset of the $H_2$ dealer, and not of the logistics company. The chain here starts with the purchase of green hydrogen produced in Trezzo sull'Adda. The cost of green hydrogen on the market is, as of today, $4$ €/kg. At first, this value is very intriguing since if we consider it in €/MJ, $H_2$  has a cost of $0.03$, the same of diesel. However, in our solution, the value chain that needs to be considered needs to take into account also hydrogen transport and storage.
+
+For this two steps, the considered costs are summarised in Table \ref{tab:tsacosts}\textsuperscript{\cite{dnvgl}}.
+
+\input{Chapters/tables_codes/tsa_tables/tsa_costs}
+
+Considering all the value chain, the specific cost of $H_2$ rises, arriving to  a value of $0.06$ €/MJ, higher than diesel but lower than the previous solution. The most impacting factors here are, of course, transport and purchase of hydrogen. Since, however, the actual solutions for transporting hydrogen will pretty much not change in the future, a sensitivity analysis can be made on the price of green hydrogen. The sensitivity analysis, reported in Table \ref{tab:sensitivity}, shows what the cost of green $H_2$ per MJ on the market should be for it to be competitive with diesel. The fact that the price needs to drop of almost the $80\%$ makes this solution \textbf{unfeasible}, at least in the present times.
+
+\input{Chapters/tables_codes/tsa_tables/tsa_sensitivity}
 
 \section{Photovoltaic PP}
 \subsection{Puglia}
-The computation started with the cost of the main facilities such as the photovoltaic pannels, assuming a cost of $1.100$ €/panel and a life time of $20$ years, whose cost per year is $1.159.840$ €/year and $24.023$ € for the tank\textsuperscript{\cite{alibaba.com2021NewAlibaba.com}}.
-
-The total cost of the storage process (compression from $20$ to $300$ bar, then to $700$ bar) were of $10.941$ €/year. 
-
-Due to the transportation of the produced hydrogen it is necessary to take into account the cost of transport of $397.485$ € and the cost related to the emissions that is equal to $53.729$ kg.
-
-The obtained surplus of hydrogen has been sold with revenues of $64.637$ €, computed as the product between the cost of the green $H_2$ on the market ($4$ €/kg\textsuperscript{\cite{Repubblicasauthor2021Lidrogeno2030}} and the total hydrogen that we can sell.
-
-In the end, in table \ref{tab:specificcostpuglia} are shown the cost computations and the specific cost.
-
-The direct use of the hydrogen as an energy carrier, instead of the electricity, avoided the use a BESS and produced a yearly savings of $2.035.465,73$ €. 
+The computation, as showed in Table \ref{tab:specificcostpuglia}, started with the cost of the main facilities such as the photovoltaic panels, a life time of $20$ years, resulting in a cost per year of $1.159.840$ €/year. The total cost of the storage process (compression from $20$ to $700$ bar) was of $10.941$ €/year. Due to the transportation of the produced hydrogen it is necessary to take into account the cost of transport of $397.485$ €, and also the indirect cost connected with the emission of 53 tons of $CO_2$. The obtained surplus of hydrogen has been sold with revenues of $52.040,86$ €, obtained considering a cost of green $H_2$ on the market of $4$ €/kg\textsuperscript{\cite{Repubblicasauthor2021Lidrogeno2030}}. The direct use of the hydrogen as an energy carrier, instead of the electricity, avoided the use a BESS and produced yearly savings of $2.035.465,73$ €. 
 
 \input{Chapters/tables_codes/economic_ev_pv/specificcostpuglia}
 
 \subsection{Milano}
-The reasoning for this solution is pretty the same as for the Photovoltaic plant in Puglia.
+The reasoning for this solution is pretty the same as for the photovoltaic plant in Puglia: we had a cost of $1.882.155$ € for the PV plant , while the revenues from hydrogen was $52.040$ €. In this case there were no transportation costs and no emissions. In Table \ref{tab:specificcostmilan} the specific costs can been founded.
 
-About the cost of main facilities, we had $1.882.155$ € for the PV plant and $86.669$ € for the thank. The revenues from hydrogen was $52.040$ € given the sellable quantity of hydrogen of ($13$ tons).
-
-In this case we there were not transportation cost and the emissions cost and for this the cost decrease. 
-
-In Table \ref{tab:specificcostmilano} the specific cost can been founded.
-
-\input{Chapters/tables_codes/economic_ev_pv/specificcostmilano}
+\input{Chapters/tables_codes/economic_ev_pv/specificcostmilan}

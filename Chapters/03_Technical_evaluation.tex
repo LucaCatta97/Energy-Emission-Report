@@ -8,26 +8,26 @@ We will now describe in detail, for each main case, the different results of the
 This solution is based on the use of electric energy provided by the hydroelectric power plant in Crodo (VB). The analysis has been based on a well-to-wheel methodology, whose main steps are the following:
 
 \begin{itemize}
-	\item Transmission of electricity from Crodo to Milan;
-    \item Production of $H_2$ on site, with \textbf{PEM electrolysis};
-    \item Compression of $H_2$;
-    \item Storage of $H2$;
-    \item Daily refueling of trucks;
+\item Production of green electricity in Crodo;
+\item Transmission of electricity from Crodo to Milano;
+\item Production of $H_2$ on site, with \textbf{PEM electrolyisis};
+\item Compression of $H_2$;
+\item Storage of $H_2$
 \end{itemize}
 
-\input{Chapters/tables_codes/Crodo_tables/Crodo_tech_ev}
+In Table \ref{tab:crodotech} is possible to see how the chosen electrolyser can be exploited to produce all the needed $H_2$ by the depot in \textbf{11 hours}. This production has been performed during the night, offering a lower cost of electricity to the owner of the depot. The needed electric energy has been transmitted from Crodo to Milano via the existing grid. The \textbf{$363$ kg} of $H_2$ have then been stored in a tank inside the depot to refuel the trucks. This solution offered the advantage to be with \textbf{0 emissions}, not considering the $CO_2$ needed to produce the electrolyser and the tank. However, as will be discussed in the next section, this solution implied that the depot owner is the owner of the electrolyser, a huge investment that will strongly influence the specific price of hydrogen.
 
-In Table \ref{tab:crodotech} is possible to see how the chosen electrolyser can be exploited to produce all the needed $H_2$ by the depot in \textbf{11 hours}. This production has been performed during the night, offering a lower cost of electricity to the owner of the depot. The needed electric energy has been transmitted from Crodo to Milano via the existing grid. The \textbf{363 kg} of $H_2$ have then been stored in a tank inside the depot to refuel the trucks. This solution offered the advantage to be with \textbf{0 emissions}, not considering the $CO_2$ needed to produce the electrolyser and the tank. However, as will be discussed in the next section, this solution implied that the depot owner is the owner of the electrolyser, a huge investment that will strongly influence the specific price of hydrogen.
+\input{Chapters/tables_codes/Crodo_tables/Crodo_tech_ev}
 
 \subsection{Trezzo sull'Adda}
 This second solution is based on a more straightforward approach with respect to the first: hydrogen is bought directly from the producer, so the owner of the depot did not have to sustain any type of cost related to the electrolysis process. The \textbf{$363$ kg} of hydrogen have been transported daily from the production site in Trezzo sull'Adda, at \textbf{ 40 Km} from Milano.
 
-The transport has been performed using \textbf{Euro VI} trucks, with an emission factor of \textbf{$94$ $g_{CO_2}/km$}; travelling for \textbf{80 km} each day, so the total emission would be of {$7,5$ $kg_{CO_2}/km$}. Of course, this solution is not with \textbf{0 emissions}, but at the present time it is more easily applicable with respect to the first one proposed for three main reasons:
+The transport has been performed using \textbf{Euro VI} trucks, with an emission factor of \textbf{$94$ g$_{CO_2}$/km}; travelling for \textbf{80 km} each day, so the total emission would be of $7,5$ kg$_{CO_2}$/km. Of course, this solution is not with \textbf{0 emissions}, but at the present time it is more easily applicable with respect to the first one proposed for three main reasons:
 
 \begin{enumerate}
 \item the transmission of energy that's completely renewable is easier, being the electroyser located in the production site;
 \item the transport of gaseous hydrogen is something that is already a reality on the market;
-\item the investment cost of this solution is 0.
+\item the investment cost of this solution is 0 for he logistics company;
 \end{enumerate}
 
 \section{Photovoltaic PP}
@@ -41,25 +41,19 @@ First of all, we sized the PV plant: we computed the energy generated (Table \re
 
 \input{Chapters/tables_codes/tech_ev/pv_puglia/energy_computation_puglia}
 
+As we can see, in the months of January, February, March, October, November and December we produced less energy than the required amount: this is reasonable, because in winter months the solar radiation is lower with respect to the summer months. We tried to store the energy in excess to avoid to buy it from the grid, but the dimension of the batteries was above $250.000$ kWh, which corresponded to approximately $2$ million €, as we will see in the next chapter. This would have led to a large outlay in economic terms, in addition to having to look for a large enough area where to place all the batteries.
+
 \input{Chapters/tables_codes/tech_ev/pv_puglia/sizepvpuglia}
 
-As we can see, in the months of January, February, March, October, November and December we produced less energy than the required amount: this is reasonable, because in winter months the solar radiation is lower with respect to the summer months.
-
-We tried to store the energy in excess to avoid to buy it from the grid, but the dimension of the batteries was above $250.000$ kWh, which corresponded to approximately 2 million €, as we will see in the next chapter. This would have led to a large outlay in economic terms, in addition to having to look for a large enough area where to place all the batteries
-
-For these reasons, we decided to switch to a storage of hydrogen. We computed the hydrogen that we could produce with the available energy from the PV plant (see Table \ref{tab:hydrogenpuglia}) and we obtained that, each years, we produced a surplus of $24.860$ kg of hydrogen. In this way we could store the surplus that we need to fill our depot ($9.220$ kg) and sell the remaining amount ($15.640$ kg).
-
-Then the hydrogen was sent to the depot in Milan, via a truck that can transport $363$ kg.
+For these reasons, we decided to switch to a storage of hydrogen. We computed the hydrogen that we could produce with the available energy from the PV plant (see Table \ref{tab:hydrogenpuglia}) and we obtained that, each year, we produced a surplus of $24.860$ kg of hydrogen. In this way we could store the surplus that we need to fill our depot ($9.220$ kg) and sell the remaining amount ($13.010$ kg). Then the hydrogen was sent to the depot in Milano, via a truck that can transport the needed $363$ kg.
 
 \input{Chapters/tables_codes/tech_ev/pv_puglia/hpuglia}
 
-\subsection{Milan}
-As before, we started with the sizing of the plant, so we recall Table \ref{tab:pvbessass} and \ref{tab:hmilan}. The result can be seen in Table \ref{tab:sizepvmilano} and \ref{tab:pvplantmilan}.
+\subsection{Milano}
+As before, we started with the sizing of the plant, so we recall Table \ref{tab:pvbessass} and \ref{tab:hmilan}. The result can be seen in Table \ref{tab:sizepvmilano} and \ref{tab:pvplantmilan}. Again, we faced out with the problem of low production in the winter months, and also with the batteries that in this case reach a cost of approximately $6$ million €. Again, we decided to switch to hydrogen storage (see Table \ref{tab:hydrogenmilan}): more in detail, we stored $33.264$ kg of hydrogen and sold $9.643$ kg.
 
 \input{Chapters/tables_codes/tech_ev/pv_milan/energy_computation_milano}
 
 \input{Chapters/tables_codes/tech_ev/pv_milan/sizepvmilano}
-
-As before, we faced out with the problem of low production in the winter months, and also with the batteries that in this case reach a cost of approximately 6 million €. Again, we decided to switch to hydrogen storage (see Table \ref{tab:hydrogenmilan}): more in detail, we stored $33.264,64$ kg of hydrogen and sell $13.010,21$ kg.
 
 \input{Chapters/tables_codes/tech_ev/pv_milan/hmilan}

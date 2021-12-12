@@ -119,7 +119,7 @@
 			\vspace{1.5cm}
 			{\color{bluepoli} \bfseries \large{\textsc{Project Work in \\ \course}}\par}
 			\vspace{1.5 cm}
-			{\color{black} \Large {Authors:} \bfseries{\name}}
+			{\color{black} {Authors:} \bfseries{\name}}
 			\end{minipage}
 			\\
 			\vspace*{\fill}
